@@ -1,5 +1,5 @@
-{% extends 'orders/header.html' %} {% load custom_tags %} {% load humanize %} {%
-block content %}
+{% extends 'orders/header.html' %} {% load custom_tags %} {% load humanize %} 
+{% block content %}
 
 <div class="container-fluid">
   <div class="content my-3 px-4">
@@ -48,7 +48,7 @@ block content %}
                     {% endfor %}
                   </ul>
                 </td>
-                <td>USD {{row.price|floatformat:2|intcomma}}</td>
+                <td>Php {{row.price|floatformat:2|intcomma}}</td>
               </tr>
               {% endfor %}
             </tbody>
