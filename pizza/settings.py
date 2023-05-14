@@ -84,6 +84,10 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+
+
+
 ]
 
 ROOT_URLCONF = 'pizza.urls'
@@ -107,6 +111,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'pizza.wsgi.application'
 
+WHITENOISE_USE_FINDERS = True
 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
