@@ -7,8 +7,7 @@ from datetime import datetime
 class Category(models.Model):
     category_title = models.CharField(max_length=200)
     category_gif = models.ImageField(upload_to="media")
-    category_description = models.CharField(
-        max_length=4000)  # make this the wysiwyg text field
+    category_description = models.CharField(max_length=4000)  # make this the wysiwyg text field
 
     class Meta:
         verbose_name = "Category"
@@ -27,7 +26,7 @@ class RegularPizza(models.Model):
     pizza_choice = models.CharField(max_length=200)
     small_price = models.DecimalField(max_digits=6, decimal_places=2)
     large_price = models.DecimalField(max_digits=6, decimal_places=2)
-    category_description = models.TextField()  # make this the wysiwyg text field
+    category_description = models.CharField(max_length=4000)   # make this the wysiwyg text field
 
     class Meta:
         verbose_name = "List of Regular Pizza"
@@ -43,7 +42,8 @@ class SicilianPizza(models.Model):
     pizza_choice = models.CharField(max_length=200)
     small_price = models.DecimalField(max_digits=6, decimal_places=2)
     large_price = models.DecimalField(max_digits=6, decimal_places=2)
-    category_description = models.TextField()  # make this the wysiwyg text field
+    category_description = models.CharField(
+        max_length=4000)   # make this the wysiwyg text field
 
     class Meta:
         verbose_name = "List of Sicilian Pizza"
