@@ -3,6 +3,6 @@ For Admin Account:
     Password: admin123
     or, you can create one by creating new super user using terminale cmd: python manage.py createsuperuser
     
-    This a group D  cloud computing 
+    This a group D  cloud computing course work
     
 
